@@ -2,18 +2,21 @@
   <div>
     <HelloWorld/>
     <UserInformation/>
+    <Counter/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import UserInformation from "@/components/UserInformation";
+import Counter from "@/components/Counter";
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    UserInformation
+    UserInformation,
+    Counter
   }
 }
 </script>
