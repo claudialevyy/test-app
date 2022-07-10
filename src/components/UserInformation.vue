@@ -4,7 +4,7 @@
     <p>{{ age }}</p>
     <p>{{ age + 5 }}</p>
     <p>Favorite Number: {{ randomNumber }}</p>
-    <input :value="name" type="text"/>
+    <input v-model="name" type="text"/>
     <div>
       <img src="https://i2-prod.mirror.co.uk/incoming/article25609246.ece/ALTERNATES/s1200d/0_PUSS-IN-BOOTS.jpg"/>
     </div>
