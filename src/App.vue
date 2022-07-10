@@ -3,6 +3,7 @@
     <HelloWorld/>
     <UserInformation/>
     <Counter/>
+    <Form/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import UserInformation from "@/components/UserInformation";
 import Counter from "@/components/Counter";
+import Form from "@/components/Form";
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     UserInformation,
-    Counter
+    Counter,
+    Form
   }
 }
 </script>
