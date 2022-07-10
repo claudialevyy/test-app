@@ -1,36 +1,37 @@
 <template>
   <div>
-    <HelloWorld/>
-    <UserInformation/>
-    <Counter/>
-    <Form/>
+    <!--    <HelloWorld/>
+        <UserInformation/>
+        <CounterComponent/>
+        <FormComponent/>
+        <ActionReactivity/>-->
+    <ClassBinding/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import UserInformation from "@/components/UserInformation";
-import Counter from "@/components/Counter";
-import Form from "@/components/Form";
+// import HelloWorld from './components/HelloWorld.vue'
+// import UserInformation from "@/components/UserInformation";
+// import CounterComponent from "@/components/CounterComponent";
+// import FormComponent from "@/components/FormComponent";
+// import ActionReactivity from "@/components/ActionReactivity";
+import ClassBinding from "@/components/ClassBinding";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    UserInformation,
-    Counter,
-    Form
+    ClassBinding,
+    // ActionReactivity,
+    // HelloWorld,
+    // UserInformation,
+    // CounterComponent,
+    // FormComponent
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
