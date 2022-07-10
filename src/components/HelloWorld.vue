@@ -3,7 +3,7 @@
     <div>
       <label for="goal">Goal </label>
       <input id="goal" v-model="enteredValue" type="text"/>
-      <button @click="addGoal">Add Goal</button>
+      <button :disabled="!enteredValue" @click="addGoal">Add Goal</button>
     </div>
     <ul>
       <li v-for="goal in goals" :key="goal">{{ goal }}</li>
@@ -22,6 +22,7 @@ export default {
   methods: {
     addGoal() {
       this.goals.push(this.enteredValue);
+      this.enteredValue = "";
     },
   },
 };
